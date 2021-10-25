@@ -1,0 +1,52 @@
+DOM = representação do HTML para o Javascript == document(ponte do JS para o HTML)
+
+document.querySelector("h1") = faz com que voce busque pequenas partes do html pelo JS,manipular pequenas partes
+
+boa prática = carregar a tag script no final do código
+
+variavel.textContent = imprime o valor/conteudo da variável(o que ela representa)
+
+variavel.classList.add(nomeNoCSS) = nos retorna todas as classes daquele objeto;que como o nome indica nos mostras classes que aquele HTML tem.
+
+CamelCase = juntar duas palavras em uma: exemplo -- Background-color para backgroundColor(com camelcase)
+
+variavel.addEventListener("eventointeressado") = é o que diz, ele é um "escutador" de evento, no caso ele vai perceber o que o usuário ta fazendo naquela determinada variável
+
+função anonima = é quando a gente declara uma função dentro de alguma operação, ela só vai ser utilizada nesse contexto, só funciona naquele contexto:
+titulo.addEventListener("click", function(){
+    console.log("Olha eu sei usar uma função anonima.");
+});
+
+document.createElement(oq quer criar) = cria um novo elemento.
+
+    event.preventDefault(); = previne o evento a fazer o comportamento padrão; obrigatorio passar event dentro da função
+
+    variavel.appendChild(nomedavariavelqueéFilho) = colocar como filho,deriva dela;
+
+    objeto = o que ele falava de ser um pedaço do HTML(como as operações .querySelector,.length)
+    .textContent é uma caracteristica
+
+    quando criamos uma variavel. por ex... 
+    var paciente{
+        nome                    isso tudo aqui é um objeto
+        gordura
+        peso
+        altura
+    }
+Utilizamos objetos no Javascript como na maioria das linguagens de programação orientadas , aonde os objetos podemos compará-los com objetos da vida real. 
+Um objeto é uma entidade independente, com propriedades e tipos. Compare-o com uma xícara, por exemplo. Uma xícara é um objeto, com propriedades. 
+Uma xícara tem uma cor, uma forma, peso, um material de composição, etc. Da mesma forma, objetos em JavaScript podem ter propriedades, que definem suas características.
+
+função .push = empurra um valor, coloca um valor na variável
+
+variavel.innerHTML = mexe diretamente com o HTML, o que é para ele fazer
+
+Expressão Regular(RegEx) = nesse capitulo foi utilizado no filtro, para fazer a busca por letra(e ir eliminando os que não tem)
+é a forma que faz o filtro
+
+Função XMLHttpRequest() = é a forma de fazer uma requisição HTTP, fazer a busca em outra aba(exemplo na BUSCAR-PACIENTES.JS)
+responsetext é para pegar o determinado pedaço de texto(conteudo) da page;
+
+pra transformar um JSON em array JS é necessário utilizar o JSON.parse(xhr.responseText);
+
+AJAX = requisição com JS de forma assincrona(pois ele não ta parando o fluxo do JS);
